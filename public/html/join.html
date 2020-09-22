@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uno - Join Game</title>
+  <link rel="stylesheet" href="/assets/css/master.css">
+</head>
+
+<body>
+  <h1 class="center divider">Join Uno Online</h1>
+  <div class="center">
+    <h3>Your Username</h3>
+    <input title="This is a required field" type="text" id="usrName"><br>
+    <input type="button" title="Join the Uno Game!" id="joinBtn" class="space" value="Join"><br>
+    <span id="usrWarn" style="color:red;display:none;">Please Enter a Username</span>
+  </div>
+  <div class="side-nav"><span class="side-nav-close">&times;</span>
+    <h2 class="divider">Uno Online</h2>
+  </div>
+  <span title="Menu" class="side-nav-open">&#9776;</span>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/join.js"></script>
+  <script src="/assets/js/menu.js"></script>
+</body>
+
+</html>

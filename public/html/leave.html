@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uno - Leave</title>
+  <link rel="stylesheet" href="/assets/css/master.css">
+</head>
+
+<body>
+  <h1 class="divider">Leaving the game...</h1>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    socket.emit("removeUser", JSON.parse(window.localStorage.getItem("uno")).name);
+    window.localStorage.removeItem("uno");
+    window.location.replace("/");
+  </script>
+</body>
+
+</html>

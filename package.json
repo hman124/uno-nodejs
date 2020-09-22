@@ -1,0 +1,17 @@
+{
+  "name": "uno",
+  "version": "1.0.0",
+  "description": "Play uno online - Made for the young men",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Harrison Steed",
+  "license": "ISC"
+}
